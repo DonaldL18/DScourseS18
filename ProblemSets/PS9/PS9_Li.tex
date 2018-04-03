@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS9_Li}
+\author{donaldli17 }
+\date{April 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Part 5}
+The dimensions are 404 observations with 16 columns
+
+\section{Part 6}
+lambda=0.00791\\
+alpha=1\\
+rmse=0.208\\
+out-of-sample= 0.1841697
+\section{Part 7}
+lambda=0.0047\\
+rmse=0.196\\
+out-of-sample=0.1717861
+\section{Part 8}
+lambda=0.129\\
+alpha=0.19 \\
+rmse=0.222\\
+out-of-sample=0.1988742\\
+
+Lasso seems to be the best one with an alpha value of 1.
+
+\section{Part 9}
+There are too many variables for a linear regression to estimate correctly. The outliers would cause a horrible r2 value and the training algorithm would cause underfitting on test data. 
+\\
+All 3 models show a low RMSE. This shows that the prediction rate of the training set is good and should run well in testing. \\
+
+The simpler models have less variances so the likelyhood of overfitting is low. However, the tricky part is when it comes to bias. This could potentially show problems of underfitting thereby potentially losing out on information that a different model could capture. 
+
+
+
+
+
+
+
+
+
+\end{document}}
