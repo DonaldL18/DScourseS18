@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS10}
+\author{Donald Li }
+\date{February. 2018}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+Worked with Jordan and Alex
+\section{Part 7}
+From tuning model\\
+
+Tree\\
+minsplit=10;\\ 
+minbucket=6; \\
+cp=0.026 : \\
+f1.test.mean=0.889,\\
+gmean.test.mean=0.661\\
+
+
+Logit \\
+lambda=0.0243;\\
+alpha=0.746 :\\
+f1.test.mean=0.90\\
+,gmean.test.mean=0.7\\
+
+
+
+NN\\
+size=9; \\
+decay=0.155; \\
+maxit=1000 :\\
+f1.test.mean=0.90\\
+,gmean.test.mean=0.774\\
+
+
+KNN\\
+ k=23 :\\
+ f1.test.mean=0.897\\
+ ,gmean.test.mean=0.747\\
+
+ 
+ 
+ 
+SVM\\
+cost=1; \\
+gamma=0.5 \\
+: f1.test.mean=0.90,\\
+gmean.test.mean=0.69\\
+
+
+
+\section{Part 8 and 9}
+
+
+
+
+Verify the performance on cross validated sets:\\
+\begin{center}
+ \begin{tabular}{||c c c c c ||} 
+ 
+ \hline
+ Model names & f1 & gmean & Out-of-sample f1 & Out-of-sample gmean\\ [0.5ex] 
+ 
+ \hline\hline
+ Tree & 0.896 & 0.658 & 0.8971274 & 0.6730234  \\ 
+ \hline
+ Logit & 0.897 & 0.662 &  0.8987592 &  0.6761422\\
+ \hline
+ NN & 0.906 & 0.765 & 0.9094810 & 0.7675114 \\
+ \hline
+ KNN & 0.901 & 0.751 & 0.8975970  & 0.7564945 \\
+ \hline
+ SVM & 0.906 & 0.731 & 0.9048752 & 0.7518145 \\
+ \hline
+ NB & 0.884 & 0.726 & 0.8825952 & 0.7340489\\[1ex] 
+ 
+ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+All the models preformed similarly. The two that stand out are the Tree and Logit models. I would chose the Tree model over Logit but that is an arbitrary decision, either models will do.  
+
+
+
+
+
+
+
+
+
+\end{document}}
